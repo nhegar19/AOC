@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -6,19 +6,9 @@ using System.Text;
 
 namespace ConsoleApp1
 {
-    class Program
+    public static class Day1
     {
-
-        static void Main(string[] args)
-        {
-            int total = 0;
-
-            total = ParseTextFile();
-            Console.WriteLine(total);
-        }
-
-
-        private static int ParseTextFile()
+        public static int ParseTextFile()
         {
             const Int32 BufferSize = 128;
             int total = 0;
@@ -59,12 +49,15 @@ namespace ConsoleApp1
                     numStringArray.Add(c);
                 }
                 else //if not check if there is a number in word form
-                { 
+                {
                     for (int j = 0; j < stringNums.Length; j++)
                     {
                         digit = ReturnNumIfWordIsNumber(s, i, stringNums[j], j + 1);
                         if (digit > 0)
+                        {
                             numStringArray.Add(digit.ToString());
+                            break;
+                        }
                     }
                 }
             }
@@ -105,7 +98,7 @@ namespace ConsoleApp1
                 int checkNum;
                 string c = s[i].ToString();
 
-                if(int.TryParse(c, out checkNum))
+                if (int.TryParse(c, out checkNum))
                 {
                     numStringArray.Add(c);
                 }
