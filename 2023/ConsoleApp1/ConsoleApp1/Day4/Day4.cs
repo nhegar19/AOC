@@ -34,7 +34,7 @@ namespace ConsoleApp1
             {
                 gamePoints = GetPart2GamePoints(allGames[i]);
 
-                for (int j = i + 1; j <= i + gamePoints; j++) // always run card once
+                for (int j = i + 1; j <= i + gamePoints; j++)
                 {
                     if (j < allGames.Count())
                     {
