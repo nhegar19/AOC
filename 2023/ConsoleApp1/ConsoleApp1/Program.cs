@@ -11,11 +11,11 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int total;
-            total = Day3.RunSolution2();
-
-            Console.WriteLine(total);
+            Day4.RunSolution2();
         }
+
+      
+
 
     }
 
