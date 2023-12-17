@@ -11,7 +11,11 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Day4.RunSolution2();
+            long lowest = 0;
+            Day5FastSolution day5 = new Day5FastSolution();
+            lowest = day5.RunSolution2();
+
+            Console.WriteLine(lowest);
         }
 
       

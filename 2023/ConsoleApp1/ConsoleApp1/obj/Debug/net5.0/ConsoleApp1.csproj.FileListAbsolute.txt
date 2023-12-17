@@ -22,7 +22,6 @@ C:\Git\AOC\AOC\2023\ConsoleApp1\ConsoleApp1\bin\Debug\net5.0\ConsoleApp1.deps.js
 C:\Git\AOC\AOC\2023\ConsoleApp1\ConsoleApp1\bin\Debug\net5.0\ConsoleApp1.dll
 C:\Git\AOC\AOC\2023\ConsoleApp1\ConsoleApp1\bin\Debug\net5.0\ref\ConsoleApp1.dll
 C:\Git\AOC\AOC\2023\ConsoleApp1\ConsoleApp1\bin\Debug\net5.0\ConsoleApp1.pdb
-C:\Git\AOC\AOC\2023\ConsoleApp1\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.csproj.AssemblyReference.cache
 C:\Git\AOC\AOC\2023\ConsoleApp1\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
 C:\Git\AOC\AOC\2023\ConsoleApp1\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.AssemblyInfoInputs.cache
 C:\Git\AOC\AOC\2023\ConsoleApp1\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.AssemblyInfo.cs
@@ -30,3 +29,4 @@ C:\Git\AOC\AOC\2023\ConsoleApp1\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.csproj.
 C:\Git\AOC\AOC\2023\ConsoleApp1\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.dll
 C:\Git\AOC\AOC\2023\ConsoleApp1\ConsoleApp1\obj\Debug\net5.0\ref\ConsoleApp1.dll
 C:\Git\AOC\AOC\2023\ConsoleApp1\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.genruntimeconfig.cache
+C:\Git\AOC\AOC\2023\ConsoleApp1\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.csproj.AssemblyReference.cache
