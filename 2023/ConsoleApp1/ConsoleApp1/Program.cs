@@ -11,11 +11,11 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            long lowest = 0;
-            Day5FastSolution day5 = new Day5FastSolution();
-            lowest = day5.RunSolution2();
+            double answer = 0;
+            Day6 day6 = new Day6();
+            answer = day6.FindProductOfAllWaysToWinRace();
 
-            Console.WriteLine(lowest);
+            Console.WriteLine(answer);
         }
 
       
