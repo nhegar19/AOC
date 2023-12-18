@@ -70,9 +70,6 @@ namespace ConsoleApp1
             List<List<long>> outerSeedMappings = new List<List<long>>();
 
             newSeedMappings = GetAllMappingRanges(ref currentMapping, newSeedMappings, seedStart, seedEnd);
-
-            
-
             foreach (var newSeedRange in newSeedMappings.MappedRanges)
             {
                 if (step > 7)
@@ -87,11 +84,6 @@ namespace ConsoleApp1
                 if (lowestLocation == 0 || currentMappedNumber < lowestLocation)
                 {
                     lowestLocation = currentMappedNumber;
-                }
-
-                if (currentMappedNumber < 46)
-                {
-                    Console.WriteLine();
                 }
 
             }
