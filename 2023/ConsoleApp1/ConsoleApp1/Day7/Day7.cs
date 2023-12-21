@@ -9,9 +9,6 @@ namespace ConsoleApp1
 {
     public class Day7
     {
-        //private Dictionary<char, int> _cardValues = new Dictionary<char, int>() {
-        //    {'2', 2}, {'3', 3},{'4', 4}, {'5', 5}, { '6',6}, {'7',7 },{'8',8 },{'9',9 },{'T',10 }, {'J',11 }, {'Q', 12 }, {'K',13 },{ 'A', 14}
-        //};
         private Dictionary<char, char> _cardValues = new Dictionary<char, char>() {
             {'2', 'a'}, {'3', 'b'},{'4', 'c'}, {'5', 'd'}, { '6','e'}, {'7','f' },{'8','g' },{'9','h' },{'T','i' }, {'J','j' }, {'Q', 'k' }, {'K','l' },{ 'A', 'm'}
         };
@@ -41,7 +38,7 @@ namespace ConsoleApp1
 
             for (int i = 0; i < orderedList.Count(); i++)
             {
-                Console.WriteLine(orderedList[i].cards + " " + orderedList[i].rank + " " + orderedList[i].bidAmount + " " + orderedList[i].handStrength);
+                //Console.WriteLine(orderedList[i].cards + " " + orderedList[i].rank + " " + orderedList[i].bidAmount + " " + orderedList[i].handStrength);
                 totalWinnings += int.Parse(orderedList[i].bidAmount) * (i + 1); 
             }
 
@@ -66,7 +63,7 @@ namespace ConsoleApp1
 
             for (int i = 0; i < orderedList.Count(); i++)
             {
-                Console.WriteLine(orderedList[i].cards + " " + orderedList[i].rank + " " + orderedList[i].bidAmount + " " + orderedList[i].handStrength);
+                //Console.WriteLine(orderedList[i].cards + " " + orderedList[i].rank + " " + orderedList[i].bidAmount + " " + orderedList[i].handStrength);
                 totalWinnings += int.Parse(orderedList[i].bidAmount) * (i + 1);
             }
 

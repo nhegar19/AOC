@@ -11,8 +11,8 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            double answer = 0;
-            Day7 game = new Day7();
+            long answer = 0;
+            Day8 game = new Day8();
             answer = game.RunSolution2();
 
             Console.WriteLine(answer);
