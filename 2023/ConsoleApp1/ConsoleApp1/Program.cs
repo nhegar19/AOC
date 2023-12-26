@@ -12,15 +12,11 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             long answer = 0;
-            Day8 game = new Day8();
-            answer = game.RunSolution2();
+            Day9 game = new Day9();
+            answer = game.RunSolution1();
 
             Console.WriteLine(answer);
         }
-
-      
-
-
     }
 
 }
