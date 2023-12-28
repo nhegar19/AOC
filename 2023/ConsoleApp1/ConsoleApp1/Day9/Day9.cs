@@ -20,6 +20,16 @@ namespace ConsoleApp1
             return answer;
         }
 
+        public long RunSolution2()
+        {
+            long answer = 0;
+            GameInfo gInfo = new GameInfo();
+            gInfo = ParseTextFileToGetGameInfo();
+            answer = GetSumOfPreviousValues(gInfo);
+
+            return answer;
+        }
+
         public long GetSumOfExtrapolatedValues(GameInfo gInfo)
         {
             long sum = 0;
@@ -30,6 +40,68 @@ namespace ConsoleApp1
             }
 
             return sum;
+        }
+
+        public long GetSumOfPreviousValues(GameInfo gInfo)
+        {
+            long sum = 0;
+
+            foreach (var valList in gInfo.ValueHistories)
+            {
+                sum += GetPreviousValueOfSequence(valList);
+            }
+
+            return sum;
+        }
+
+        public long GetPreviousValueOfSequence(List<long> valSequence)
+        {
+            long nextVal = 0;
+            List<List<long>> LastNums = new List<List<long>>();
+
+            List<long> currentSequence = valSequence;
+            List<long> newSequence = valSequence;
+            List<long> lastSequence = valSequence;
+            long lastDigit = valSequence[valSequence.Count() - 1];
+            long diff = 0;
+            bool canEnd = false;
+            LastNums.Add(new List<long>() { currentSequence.First(), 0 });
+            while (canEnd == false)
+            {
+                currentSequence = newSequence;
+                newSequence = new List<long>();
+
+                for (int i = 0; i < currentSequence.Count() - 1; i++)
+                {
+                    diff = currentSequence[i] - currentSequence[i + 1];
+                    newSequence.Add(diff);
+                }
+
+                if (newSequence.Count() == 0 || newSequence.All((i) => i == 0))
+                {
+                    canEnd = true;
+                }
+
+                lastDigit = newSequence.Count() > 0 ? newSequence.First() : 0;
+                LastNums.Add(new List<long>() { lastDigit, 0 });
+            }
+
+            //ableToCalculate because found a 0 sequence
+            if ((newSequence.Count() > 0 && newSequence.Last() == 0))
+            {
+                for (int i = LastNums.Count() - 1; i > 0; i--)
+                {
+                    LastNums[i - 1][1] = LastNums[i][0] + LastNums[i][1];
+                    nextVal = LastNums[i - 1][1];
+
+                }
+                nextVal = LastNums[0][0] + LastNums[0][1];
+            }
+            else
+            {
+                nextVal = 0;
+            }
+            return nextVal;
         }
 
         public long GetNextValueOfSequence(List<long> valSequence)

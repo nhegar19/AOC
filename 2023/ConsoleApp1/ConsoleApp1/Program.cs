@@ -13,7 +13,7 @@ namespace ConsoleApp1
         {
             long answer = 0;
             Day9 game = new Day9();
-            answer = game.RunSolution1();
+            answer = game.RunSolution2();
 
             Console.WriteLine(answer);
         }
